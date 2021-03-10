@@ -217,8 +217,7 @@ class WeatherCard extends LitElement {
           </span>
         </li>
         <li>
-          <ha-icon icon="mdi:weather-fog"></ha-icon> ${stateObj.attributes
-            .visibility}<span class="unit">
+          <ha-icon icon="mdi:weather-fog"></ha-icon> ${this.hass.states["sensor.cc_alexandria_visibility"]}<span class="unit">
             ${this.getUnit("length")}
           </span>
         </li>
